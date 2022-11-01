@@ -3,3 +3,20 @@ Tenes que crear un set () con un argument. Y setear el valor de la state variabl
 Luego, crea otra funcion get() que devuelva el valor de la state variable. */
 
 
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract argumentyfuncion {
+ 
+    uint private num;
+
+   
+    function set(uint _num) public {
+        num = _num;
+    }
+
+    
+    function get() public view returns (uint) {
+        return num;
+    }
+}

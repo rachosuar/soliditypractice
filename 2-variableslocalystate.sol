@@ -3,7 +3,7 @@ Deberas crear una state variable e iniciarlizarla con 10 y luego deberias crear 
 De igual manera, tenes que crear una variable local e iniciarla con 20 y luego tenes que crear una funcion returnLocalVariable que devuelva el valor de la variable local creada. 
 */
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.0;
+pragma solidity 0.8.17;
 
 contract variablesLocalesyState {
     int stateVariable;

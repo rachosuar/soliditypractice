@@ -4,3 +4,20 @@
 3. Si n es primo, entonces la funcion debe devolver 1. Si n no es primo, entonces la funcion debe devolver 0.
 Por ejemplo: Si n=103 entonces esPrimo() debe devolver 1 porque 103 es un numero primo. Si n=100 entonces esPrimo(n) debe devolver 0 porque 100 no es primo.
 4. La funcion debe ser public. */
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.13;
+
+contract numeroPrimo {
+    function esPrimo(uint256 n) public pure returns (bool) {
+     if(n==0){return false;}
+     if(n==1){return false;}
+     if(n==4){return false;}
+     uint256 _acum=1;
+    while(_acum<n/2){
+        _acum+=1;
+        if (n%_acum == 0) {return false;}
+
+    }
+    return true;
+}}
